@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Circular ;
+    src: url(recursos/circular-std-medium-500.ttf);
+}
+
+body{
+    font-family: Circular;
+    background-color: #fff;
+}
+
+header a{
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo{
+    font-size: 22px; /* Enrealidad tendria que ser un  svg */
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li a{
+    color: #000C2D;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* HERO */
+
+.hero{
+    background-color: #2F70FE;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#h3Hero{
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+#pHero{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    opacity: 0.80;
+}
+
+#butonHero{
+    background-color: #000;
+    padding: 16px 25px;
+    text-align: center;
+    max-width: 130px;
+    margin: auto;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Porque nosotros */
+
+#porquenosotros{
+    padding-top: 30px;
+    text-align: center;
+    background-color: #00FF8514;
+}
+
+.container-cards{
+    background-color: #00FF8514;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.container-carac{
+    max-width: 130px;
+    
+    margin: auto
+}
+
+.icon{
+    background-image: url(recursos/eclipseGris.svg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon img{
+    margin: auto;
+}
+
+.icon-p{
+    font-size: 14px;
+    max-width: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* weas */
+
+.contenedor-weas{
+    margin: 30px;
+    background-color: #fff;
+    padding: 70px;
+}
+
+.contenedor3-carac{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor3-img img{
+    max-width: 200px;
+}
+
+.contenedor3-p h3{
+    font-size: 28px;
+    color: #181818;
+    text-align: center;
+}
+
+.contenedor3-p p{
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 10px;
+    opacity: 0.90;
+    letter-spacing: 0.70px;
+    color: #000C2D;
+    text-align: center;
+}
+
+.margin80{
+    margin-top: 80px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-company{
+    margin: 10px;
+}
+
+.contenedor-company h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contenedor-company a{
+    font-size: 12px;
+}
+
+/* precios pag */
+
+.container-planes{
+    display: flex;
+    justify-content: center;
+    background-color: #2F70FE;
+}
+
+.plan1{
+    max-width: 300px;
+    padding: 15px;
+    margin: 50px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.beneficios{
+    margin: 3px;
+    font-size: 13px;
+    text-align: start;
+}
+
+.des-plan{
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.name-plan{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.precio-plan{
+    margin-bottom: 10px;
+    color: #12db98;
+    text-align: center;
+}
+
+.divisor{
+    border-bottom: #000 2px solid;
+    margin: 10px;
+}
+
+/*  in progress */
+
+.inprogress-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.h3progres{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.imgprogress img{
+    max-width: 400px;
+}
+
+@media (max-width:800px) {
+    .imgprogress img{
+        max-width: 270px;
+    }
+    .h3progres{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+}
